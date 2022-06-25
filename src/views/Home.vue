@@ -16,7 +16,7 @@
 					<select v-model="mode" @change="modeChange">
 						<option :value="8">8</option>
 						<option :value="16">16</option>
-						<option :value="16">32</option>
+						<option :value="32">32</option>
 					</select>
 					人模式
 				</div>
@@ -59,11 +59,10 @@ export default {
 			userList: [],
 			sortList: [],
 			tree: {},
-			mode: 16
+			mode: 32
 		}
 	},
 	created() {
-    console.log("start------")
 		const userList = localStorage.getItem('userList');
 		const tree = localStorage.getItem('tree');
 		const mode = localStorage.getItem('mode');
