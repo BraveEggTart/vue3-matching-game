@@ -99,9 +99,6 @@ export default {
 
 			const arr = this.userList.filter(item => item.name !== '');
 
-			if(arr.length <= this.mode * 2 / 3) {
-				return alert('至少需要超过当前模式的2/3人数才能创建')
-			}
 			localStorage.setItem('userList', JSON.stringify(this.userList));
 			localStorage.setItem('mode', JSON.stringify(this.mode));
 
